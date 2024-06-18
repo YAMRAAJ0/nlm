@@ -1,0 +1,263 @@
+/* style2.css */
+
+/* Existing styles... */
+
+.sap-modules {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.sap-modules h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-right: 20px;
+    padding-right: 10px;
+    
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.sap-modules .sap-text {
+    color: black;
+    font-weight: bold;
+}
+
+.sap-modules p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+    border-left: 3px solid #ff0000; 
+   padding-left: 25px;
+}
+
+.card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.red-div {
+    background-color: #f1683a; /* Red background color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 20px;
+   margin-top: 20PX;
+}
+
+.red-div h2 {
+    margin-bottom: 10px; /* Add space below heading */
+}
+
+.btn-black {
+    background-color: black; /* Black button background */
+    color: white; /* White button text color */
+}
+
+
+
+
+
+
+.it-services {
+    background-color: #000;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.it-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.it-services-image {
+    padding: 20px;
+}
+
+.it-services-content {
+    padding: 20px;
+}
+
+.it-services-content h2 {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.it-services-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.learn-more-button:hover {
+    background-color: darkgreen;
+}
+
+.consultation-section {
+    background-color: red;
+    color: #000;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.consultation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.consultation-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.consultation-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.consultation-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.consultation-button-container {
+    flex: 0 0 auto;
+}
+
+.consultation-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.consultation-button:hover {
+   transition: 0.5s;
+    color: #ff0000;
+}
+
+
+.core-values {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.core-values-text {
+    padding: 20px;
+}
+
+.core-values-text h1 {
+    color: red;
+    font-size: 36px;
+}
+
+.core-values-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.core-values-image {
+    padding: 20px;
+}
+
+.core-values-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.about-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h2 {
+    color: green;
+    font-size: 24px;
+}
+
+.about-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.learn-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.learn-more-button:hover {
+    background-color: darkgreen;
+}
+
+.clients-section {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.clients-section h2 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.clients-logos img {
+    max-width: 100%;
+    margin: 10px;
+}
