@@ -2,7 +2,7 @@
 body{
     margin: 0;
     background-color: #ffffff;
-    color: #eee;
+   
     font-family: Poppins;
     font-size: 12px;
 }
@@ -66,6 +66,7 @@ nav a {
 
 /* carousel */
 .carousel{
+    color: #eee;
     height: 100vh;
     margin-top: -50px;
     width: 100%;
