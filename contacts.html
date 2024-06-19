@@ -10,26 +10,23 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css"> <!-- Combined custom styles -->
+  <link rel="stylesheet" href="header.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     /* Custom styles specific to this page */
     /* Add your custom styles here */
   </style>
-     <link rel="stylesheet" href="header.css">
 </head>
 <body>
-  <!-- Header -->
-
-
   <header class="bg-dark">
     <a href="index.html"><img class="logoimg" src="./image/Frame 26.png" alt="Icon"></a>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="contacts.html">Contacts</a>
-        <a href="info.html">Info</a>
+      <a href="index.html">Home</a>
+      <a href="contacts.html">Contacts</a>
+      <a href="info.html">Info</a>
     </nav>
-</header>
+  </header>
 
-  <!-- Breadcrumb -->
   <section class="mt-5">
     <div class="bg-light py-5">
       <div class="container">
@@ -47,61 +44,52 @@
       </div>
     </div>
   </section>
-
-  <!-- Main Content -->
-  <main >
+  <main>
     <div class="container py-5">
-      <div class="row">
-       
-    <div class="container py-5">
-        <div class="row g-5">
-          <!-- Contact Information Block -->
-          <div class="col-xl-6">
-            <div class="row row-cols-md-2 g-4">
-              <div class="aos-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="aos-item__inner">
-                  <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
-                    <div class="d-flex justify-content-start">
-                      <i class="fa-solid fa-envelope h3 pe-2"></i>
-                      <span class="h5">Email</span>
-                    </div>
-                    <span>info@nlmitsolutions.com</span>
-                  </div>
+      <div class="row g-5">
+        <!-- Contact Information Block -->
+        <div class="col-xl-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="row row-cols-md-2 g-4">
+            <div data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-envelope h3 pe-2"></i>
+                  <span class="h5">Email</span>
                 </div>
-              </div>
-              <div class="aos-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="aos-item__inner">
-                  <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
-                    <div class="d-flex justify-content-start">
-                      <i class="fa-solid fa-phone h3 pe-2"></i>
-                      <span class="h5">Phone</span>
-                    </div>
-                    <span>+123-456-7890</span>
-                  </div>
-                </div>
+                <span>info@nlmitsolutions.com</span>
               </div>
             </div>
-            <div class="aos-item mt-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="aos-item__inner">
-                <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
-                  <div class="d-flex justify-content-start">
-                    <i class="fa-solid fa-location-pin h3 pe-2"></i>
-                    <span class="h5">Office location</span>
-                  </div>
-                  <span>123 Main Street, Suite 456, Your City, Your State, Your Country</span>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+                <div class="d-flex justify-content-start">
+                  <i class="fa-solid fa-phone h3 pe-2"></i>
+                  <span class="h5">Phone</span>
                 </div>
+                <span>+123-456-7890</span>
               </div>
             </div>
-           
           </div>
-        <div class="col-lg-6">
-            <div class="aos-item" data-aos="fade-up" data-aos-delay="800">
-                <div class="mt-4 w-100 aos-item__inner">
-                  <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
-                </div>
+          <div class="mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="bg-light hvr-shutter-out-horizontal d-block p-3">
+              <div class="d-flex justify-content-start">
+                <i class="fa-solid fa-location-pin h3 pe-2"></i>
+                <span class="h5">Office location</span>
               </div>
+              <span>123 Main Street, Suite 456, Your City, Your State, Your Country</span>
+            </div>
+          </div>
         </div>
+
+        <!-- Map Block -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="800">
+          <div class="mt-4 w-100">
+            <iframe class="hvr-shadow" width="100%" height="345" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+              <a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a>
+            </iframe>
+          </div>
+        </div>
+
         <!-- Contact Form -->
         <div class="col-lg-6">
           <!-- Contact form content -->
@@ -152,23 +140,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
