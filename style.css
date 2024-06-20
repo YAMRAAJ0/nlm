@@ -1,32 +1,31 @@
-
 body {
     overflow-x: hidden;
-  }
-  
-  header,  .container, .footer-container {
+}
+
+header, .container, .footer-container {
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-  }
-  
-  .logoimg {
+}
+
+.logoimg {
     max-width: 100%;
     height: auto;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     padding: 5px 10px;
-  }
-  
-  .card-body .service-section h3 {
+}
+
+.card-body .service-section h3 {
     margin-top: 20px;
-  }
-  
-  .social-icons img {
+}
+
+.social-icons img {
     width: 30px;
     height: 30px;
-  }
-  
+}
+
 .sap-modules {
     display: flex;
     align-items: center;
@@ -43,7 +42,6 @@ body {
     font-weight: normal;
     margin-right: 20px;
     padding-right: 10px;
-    
     color: #ff0000;
     font-weight: bold;
 }
@@ -58,7 +56,7 @@ body {
     color: #555;
     margin: 0;
     border-left: 3px solid #ff0000; 
-   padding-left: 25px;
+    padding-left: 25px;
 }
 
 .card-hover {
@@ -83,7 +81,7 @@ body {
     background-color: #f1683a; /* Red background color */
     color: rgb(0, 0, 0); /* Text color */
     padding: 20px;
-   margin-top: 20PX;
+    margin-top: 20px;
 }
 
 .red-div h2 {
@@ -94,11 +92,6 @@ body {
     background-color: black; /* Black button background */
     color: white; /* White button text color */
 }
-
-
-
-
-
 
 .it-services {
     background-color: #000;
@@ -195,10 +188,9 @@ body {
 }
 
 .consultation-button:hover {
-   transition: 0.5s;
+    transition: 0.5s;
     color: #ff0000;
 }
-
 
 .core-values {
     padding: 20px;
@@ -227,7 +219,6 @@ body {
     width: 100%;
     border-radius: 10px;
 }
-
 
 .about-section {
     padding: 20px;
@@ -286,6 +277,7 @@ body {
     max-width: 100%;
     margin: 10px;
 }
+
 .icon {
     width: 24px;
     height: 24px;
@@ -294,8 +286,6 @@ body {
 ul li {
     font-size: 1.2em;
 }
-
-
 
 .icon {
     width: 50px;
@@ -322,7 +312,6 @@ button {
     transform: scale(1.05);
 }
 
-
 .sap-modules {
     transition: all 0.3s ease-in-out;
 }
@@ -348,9 +337,6 @@ button {
     transform: scale(1.1);
 }
 
-
 .btn-primary {
     z-index: 1; /* Ensure button appears above the image */
-    /* You can add more styling here as needed */
 }
-

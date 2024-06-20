@@ -1,10 +1,18 @@
+body {
+    overflow-x: hidden;
+}
 
+header, .container, .footer-container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 section {
     display: grid;
     place-items: center;
     align-content: center;
-    
+    overflow-x: hidden; /* Ensure content within sections doesn't overflow */
 }
 
 .hidden {
@@ -22,6 +30,11 @@ section {
 
 .logos {
     display: flex;
+    overflow-x: hidden; /* Prevent flex items from causing horizontal scroll */
+}
+
+.logo {
+    max-width: 100%; /* Ensure logos do not exceed their container */
 }
 
 .logo:nth-child(2) {
@@ -60,4 +73,356 @@ section {
 
 .right-slide.show {
     transform: translateX(0);
+}
+
+/* Additional styles from your original code, ensuring no overflow */
+header, .container, .footer-container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logoimg {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-link {
+    padding: 5px 10px;
+}
+
+.card-body .service-section h3 {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.sap-modules {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.sap-modules h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-right: 20px;
+    padding-right: 10px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.sap-modules .sap-text {
+    color: black;
+    font-weight: bold;
+}
+
+.sap-modules p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+    border-left: 3px solid #ff0000; 
+    padding-left: 25px;
+}
+
+.card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.red-div {
+    background-color: #f1683a; /* Red background color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.red-div h2 {
+    margin-bottom: 10px; /* Add space below heading */
+}
+
+.btn-black {
+    background-color: black; /* Black button background */
+    color: white; /* White button text color */
+}
+
+.it-services {
+    background-color: #000;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.it-services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.it-services-image {
+    padding: 20px;
+}
+
+.it-services-content {
+    padding: 20px;
+}
+
+.it-services-content h2 {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.it-services-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.learn-more-button:hover {
+    background-color: darkgreen;
+}
+
+.consultation-section {
+    background-color: red;
+    color: #000;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.consultation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.consultation-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.consultation-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.consultation-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.consultation-button-container {
+    flex: 0 0 auto;
+}
+
+.consultation-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.consultation-button:hover {
+    transition: 0.5s;
+    color: #ff0000;
+}
+
+.core-values {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.core-values-text {
+    padding: 20px;
+}
+
+.core-values-text h1 {
+    color: red;
+    font-size: 36px;
+}
+
+.core-values-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.core-values-image {
+    padding: 20px;
+}
+
+.core-values-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-text h2 {
+    color: green;
+    font-size: 24px;
+}
+
+.about-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.learn-more-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.learn-more-button:hover {
+    background-color: darkgreen;
+}
+
+.clients-section {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.clients-section h2 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.clients-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients-logos img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+ul li {
+    font-size: 1.2em;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 20px;
+}
+
+.learn-more-button {
+    border-radius: 20px;
+}
+
+.card-hover {
+    transition: transform 0.3s;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+}
+
+.sap-modules {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-hover {
+    transition: transform 0.3s;
+}
+
+.card-hover:hover {
+    transform: scale(1.05);
+}
+
+.clients-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clients-logos .img-fluid {
+    transition: transform 0.3s;
+}
+
+.clients-logos .img-fluid:hover {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    z-index: 1; /* Ensure button appears above the image */
 }
