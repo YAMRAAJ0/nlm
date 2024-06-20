@@ -1,5 +1,32 @@
 
-
+body {
+    overflow-x: hidden;
+  }
+  
+  header,  .container, .footer-container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .logoimg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .nav-link {
+    padding: 5px 10px;
+  }
+  
+  .card-body .service-section h3 {
+    margin-top: 20px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
 .sap-modules {
     display: flex;
     align-items: center;
