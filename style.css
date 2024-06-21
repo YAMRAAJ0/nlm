@@ -55,8 +55,8 @@ header,  .footer-container {
     font-weight: normal;
     margin-right: 20px;
     padding-right: 10px;
-    
-    color: #ff0000;
+   
+    color: #CC553D;
     font-weight: bold;
 }
 
@@ -69,7 +69,7 @@ header,  .footer-container {
     font-size: 1em;
     color: #555;
     margin: 0;
-    border-left: 3px solid #ff0000; 
+    border-left: 3px solid #CC553D; 
    padding-left: 25px;
 }
 
@@ -83,7 +83,7 @@ header,  .footer-container {
 }
 
 .card-title {
-    color: #ff0000;
+    color: #CC553D;
     font-weight: bold;
 }
 
@@ -92,7 +92,7 @@ header,  .footer-container {
 }
 
 .red-div {
-    background-color: #f1683a; /* Red background color */
+    background-color: #CC553D; /* #CC553D background color */
     color: rgb(0, 0, 0); /* Text color */
     padding: 20px;
    margin-top: 20PX;
@@ -133,7 +133,7 @@ header,  .footer-container {
 
 .it-services-content h2 {
     font-size: 36px;
-    color: red;
+    color: #CC553D;
     margin-bottom: 20px;
 }
 
@@ -145,7 +145,7 @@ header,  .footer-container {
 
 .learn-more-button {
     display: inline-block;
-    background-color: green;
+    background-color: #CC553D;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -154,11 +154,11 @@ header,  .footer-container {
 }
 
 .learn-more-button:hover {
-    background-color: darkgreen;
+    background-color: #CC553D;
 }
 
 .consultation-section {
-    background-color: red;
+    background-color: #CC553D ;
     color: #000;
     padding: 40px 20px;
     margin-bottom: 20px;
@@ -208,7 +208,8 @@ header,  .footer-container {
 
 .consultation-button:hover {
    transition: 0.5s;
-    color: #ff0000;
+    color: #CC553D;
+
 }
 
 
@@ -222,7 +223,7 @@ header,  .footer-container {
 }
 
 .core-values-text h1 {
-    color: red;
+    color: #CC553D;
     font-size: 36px;
 }
 
@@ -253,7 +254,7 @@ header,  .footer-container {
 }
 
 .about-text h2 {
-    color: red;
+    color: #CC553D;
     font-size: 24px;
 }
 
@@ -271,7 +272,7 @@ header,  .footer-container {
 .learn-more-button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: red;
+    background-color: #CC553D;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -289,7 +290,7 @@ header,  .footer-container {
 }
 
 .clients-section h2 {
-    color: red;
+    color: #CC553D;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -371,7 +372,7 @@ button {
     height: auto;
 }
 .btn-custom {
-    background-color: red;
+    background-color: #CC553D;
     transition: background-color 0.3s ease;
 }
 
@@ -380,5 +381,5 @@ button {
     color: white; /* Optional: Change text color on hover */
 }
 .red-text {
-    color: red;
+    color: #CC553D;
 }
