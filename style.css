@@ -1,29 +1,40 @@
-body {
-    overflow-x: hidden;
+
+
+.container {
+    max-width: 94%; /* Ensures content doesn't exceed viewport width */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 0 20px; /* Example padding */
 }
 
-header, .container, .footer-container {
-    max-width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+/* Example responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+header,  .footer-container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .logoimg {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav-link {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 .card-body .service-section h3 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .sap-modules {
@@ -33,15 +44,18 @@ header, .container, .footer-container {
     padding-bottom: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
     background-color: #f8f9fa;
+    font-weight: bold;
 }
+
 
 .sap-modules h2 {
     font-size: 1.5em;
     font-weight: normal;
     margin-right: 20px;
     padding-right: 10px;
+    
     color: #ff0000;
     font-weight: bold;
 }
@@ -56,7 +70,7 @@ header, .container, .footer-container {
     color: #555;
     margin: 0;
     border-left: 3px solid #ff0000; 
-    padding-left: 25px;
+   padding-left: 25px;
 }
 
 .card-hover {
@@ -81,7 +95,7 @@ header, .container, .footer-container {
     background-color: #f1683a; /* Red background color */
     color: rgb(0, 0, 0); /* Text color */
     padding: 20px;
-    margin-top: 20px;
+   margin-top: 20PX;
 }
 
 .red-div h2 {
@@ -92,6 +106,11 @@ header, .container, .footer-container {
     background-color: black; /* Black button background */
     color: white; /* White button text color */
 }
+
+
+
+
+
 
 .it-services {
     background-color: #000;
@@ -188,9 +207,10 @@ header, .container, .footer-container {
 }
 
 .consultation-button:hover {
-    transition: 0.5s;
+   transition: 0.5s;
     color: #ff0000;
 }
+
 
 .core-values {
     padding: 20px;
@@ -220,6 +240,7 @@ header, .container, .footer-container {
     border-radius: 10px;
 }
 
+
 .about-section {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -232,7 +253,7 @@ header, .container, .footer-container {
 }
 
 .about-text h2 {
-    color: green;
+    color: red;
     font-size: 24px;
 }
 
@@ -250,15 +271,15 @@ header, .container, .footer-container {
 .learn-more-button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: green;
+    background-color: red;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 16px;
 }
 
 .learn-more-button:hover {
-    background-color: darkgreen;
+    background-color: rgb(0, 0, 0);
+    
 }
 
 .clients-section {
@@ -277,7 +298,6 @@ header, .container, .footer-container {
     max-width: 100%;
     margin: 10px;
 }
-
 .icon {
     width: 24px;
     height: 24px;
@@ -286,6 +306,8 @@ header, .container, .footer-container {
 ul li {
     font-size: 1.2em;
 }
+
+
 
 .icon {
     width: 50px;
@@ -312,6 +334,7 @@ button {
     transform: scale(1.05);
 }
 
+
 .sap-modules {
     transition: all 0.3s ease-in-out;
 }
@@ -337,6 +360,25 @@ button {
     transform: scale(1.1);
 }
 
+
 .btn-primary {
     z-index: 1; /* Ensure button appears above the image */
+    /* You can add more styling here as needed */
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+.btn-custom {
+    background-color: red;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: black;
+    color: white; /* Optional: Change text color on hover */
+}
+.red-text {
+    color: red;
 }
