@@ -43,6 +43,7 @@ header {
 
 header .logoimg {
     width: 100px;
+    padding-left: 10px;
     transition: transform 0.3s;
 }
 

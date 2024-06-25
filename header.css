@@ -13,8 +13,7 @@ a{
 /* carousel */
 .carousel{
     color: #eee;
-    height: 90vh;
-    /* margin-top: -50px; */
+    height: 88vh;
     width: 100%;
     overflow: hidden;
     position: relative;
