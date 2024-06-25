@@ -21,6 +21,10 @@
 </head>
 <body>
 
+    <div id="spinner" class="spinner-overlay">
+        <img class="logoimg" src="./image/N Icon.png" alt="Icon">
+    </div>
+
     <header class="sticky-top shadow-sm bg-white py-2">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -46,11 +50,11 @@
     
         <!-- Offcanvas Menu -->
         <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header d-lg-none">
                 <a href="index.html"><img class="logoimg" src="./image/NLM LOGO.png" alt="Icon"></a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body d-lg-none">
+            <div class="offcanvas-body">
                 <nav class="nav flex-column">
                     <a class="nav-button nav-link" href="index.html">Home</a>
                     <a class="nav-button nav-link" href="index.html">Service</a>
@@ -69,6 +73,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     
     <script>
+        // Hide spinner after page load
+     setTimeout(function() {
+        const spinner = document.getElementById('spinner');
+        spinner.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }, 4000); // 2000 milliseconds = 2 seconds
+    
         window.addEventListener('scroll', function() {
             const navButtons = document.querySelectorAll('.navbutton');
             const scrollPosition = window.scrollY || document.documentElement.scrollTop;

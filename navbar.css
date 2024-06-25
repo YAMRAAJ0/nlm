@@ -6,7 +6,8 @@ header {
     justify-content: space-between;
     padding: 0px 20px;
     animation: slideDown 1s ease-out;
-}
+} 
+
 
 .navbutton {
     text-decoration: none;
@@ -15,7 +16,11 @@ header {
     padding: 35px 25px; /* Default padding for larger screens */
     position: relative;
     font-weight: 700;
-    transition: padding 0.3s;
+    transition: padding 0.3s; /* Smooth transition for padding change */
+}
+
+.logoimg {
+    max-height: 50px;
 }
 
 
