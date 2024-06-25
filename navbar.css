@@ -1,42 +1,53 @@
-
 header {
-    width: 1140px;
-    max-width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distributes space between logo and nav */
-    background-color:rgba(0, 0, 0, 0.411); /* Dark background for professionalism */
-    padding: 0px 20px; /* Add padding for spacing */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    position: relative;
-    z-index: 100;
-    animation: slideDown 1s ease-out; /* Add animation */
+    justify-content: space-between;
+    padding: 0px 20px;
+    animation: slideDown 1s ease-out;
 }
 
-header a {
+.navbutton {
     text-decoration: none;
-    color: #eee; /* Light color for contrast */
+    color: #000000;
     font-size: 1.1em;
-    transition: color 0.3s;
+    padding: 35px 10px;
+    position: relative;
+    font-weight: 700;
 }
 
-header a:hover {
-    color: #f1683a; /* Change color on hover */
+.navbutton::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #CC553D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: bottom right;
+}
+
+.navbutton:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbutton:hover {
+    color: #CC553D;
+    text-decoration: none; /* Ensure underline is removed on hover */
 }
 
 header .logoimg {
     width: 100px;
-    margin-right: 40px;
-    transition: transform 0.3s; /* Smooth scaling */
+    transition: transform 0.3s;
 }
 
 header .logoimg:hover {
-    transform: scale(1.1); /* Slight scale up on hover */
-}
-
-nav a {
-    margin-right: 40px;
+    transform: scale(1.1);
 }
 
 @keyframes slideDown {

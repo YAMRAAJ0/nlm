@@ -10,14 +10,11 @@ a{
     text-decoration: none;
 }
 
-
-
-
 /* carousel */
 .carousel{
     color: #eee;
-    height: 100vh;
-    margin-top: -50px;
+    height: 90vh;
+    /* margin-top: -50px; */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -56,7 +53,7 @@ a{
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: #f1683a;
+    color: #CC553D;
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -67,7 +64,7 @@ a{
 }
 .carousel .list .item .buttons button{
     border: none;
-    background-color: #f1683a;
+    background-color: #CC553D;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
@@ -75,8 +72,8 @@ a{
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
-    border: 1px solid #f1683a;
-    color: #f1683a;
+    border: 1px solid #CC553D;
+    color: #CC553D;
 }
 /* thumbail */
 .thumbnail{
@@ -228,7 +225,7 @@ a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #f1683a;
+    background-color: #CC553D;
     left: 0;
     top: 0;
 }
