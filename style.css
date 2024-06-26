@@ -1,5 +1,5 @@
 body {
-    overflow: hidden; /* Prevent scrolling while loading */
+    font-family: 'Roboto', sans-serif;
 }
 
 .spinner-overlay {

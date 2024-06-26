@@ -7,15 +7,55 @@ header {
     padding: 0px 20px;
     animation: slideDown 1s ease-out;
 } 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CC553D; /* Dark blue color */
+    padding: 0px 20px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-user a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-user span {
+    color: #ffffff;
+    padding: 0 5px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.navbutton1 {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 10px 25px; /* Default padding for larger screens */
+    position: relative;
+    font-weight: 750;
+    transition: padding 0.3s; /* Smooth transition for padding change */
+}
 
 
 .navbutton {
     text-decoration: none;
     color: #000000;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 35px 25px; /* Default padding for larger screens */
     position: relative;
-    font-weight: 700;
+    font-weight: 750;
     transition: padding 0.3s; /* Smooth transition for padding change */
 }
 
@@ -27,7 +67,7 @@ header {
 /* For screens smaller than 992px (medium devices and smaller) */
 @media (max-width: 1244px) {
     .navbutton {
-        padding: 30px 10px; /* Adjust padding for medium screens */
+        padding: 25px 10px; /* Adjust padding for medium screens */
     }
 }
 

@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,500,400);
+
+
+
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 200px;
+  perspective: 500px;
+}
+
+
+
+
+.front{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backface-visibility: hidden;
+
+  overflow: hidden;
+  text-align: center;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateX(0);
+}
+
+.front .image {
+  animation: ride 0.5s ease-in-out infinite;
+}
+
+.front .roadWrapper {
+  position: absolute;
+  top: 133px;
+  left: 80px;
+  width: 200px;
+  height: 3px;
+  overflow: hidden;
+}
+
+.front .roadWrapper .line-1,
+.front .roadWrapper .line-2,
+.front .roadWrapper .line-3,
+.front .roadWrapper .line-4,
+.front .roadWrapper .line-5,
+.front .roadWrapper .line-6,
+.front .roadWrapper .line-7 {
+  position: absolute;
+  right: -25px;
+  top: 0;
+  height: 3px;
+  background: #4b4841;
+  border-radius: 3px;
+  animation: lines linear infinite;
+}
+
+.front .roadWrapper .line-1 {
+  width: 4px;
+  animation-duration: 0.8s;
+}
+
+.front .roadWrapper .line-2 {
+  width: 6px;
+  animation-duration: 0.9s;
+}
+
+.front .roadWrapper .line-3 {
+  width: 8px;
+  animation-duration: 1s;
+}
+
+.front .roadWrapper .line-4 {
+  width: 10px;
+  animation-duration: 1.1s;
+}
+
+.front .roadWrapper .line-5 {
+  width: 12px;
+  animation-duration: 1.2s;
+}
+
+.front .roadWrapper .line-6 {
+  width: 14px;
+  animation-duration: 1.3s;
+}
+
+.front .roadWrapper .line-7 {
+  width: 16px;
+  animation-duration: 1.4s;
+}
+
+.image {
+  position: relative;
+  transform-origin: 50% 100%;
+}
+
+@keyframes ride {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.96);
+  }
+}
+
+@keyframes fly {
+  0%, 100% {
+    transform: translate3d(0, -10px, 0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes lines {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-250px, 0, 0);
+  }
+}
