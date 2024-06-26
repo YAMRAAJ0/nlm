@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin: 0;
-    background-color: #ffffff;
+    background: #ffffff;
    
     font-family: Poppins;
     font-size: 12px;
@@ -52,7 +52,9 @@ a{
     line-height: 1.3em;
 }
 .carousel .list .item .topic{
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .carousel .list .item .buttons{
     display: grid;
@@ -63,16 +65,18 @@ a{
 }
 .carousel .list .item .buttons button{
     border: none;
-    background-color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
     color: white;
 }
 .carousel .list .item .buttons button:nth-child(2){
-    background-color: transparent;
-    border: 1px solid #CC553D;
-    color: #CC553D;
+    background: transparent;
+    border: 1px solid linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /* thumbail */
 .thumbnail{
@@ -125,7 +129,7 @@ a{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background: #eee4;
     border: none;
     color: #fff;
     font-family: monospace;
@@ -133,7 +137,7 @@ a{
     transition: .5s;
 } */
 /* .arrows button:hover{
-    background-color: #fff;
+    background: #fff;
     color: #000;
 } */
 
@@ -224,7 +228,7 @@ a{
     z-index: 1000;
     width: 0%;
     height: 3px;
-    background-color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
     left: 0;
     top: 0;
 }

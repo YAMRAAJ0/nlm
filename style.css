@@ -8,7 +8,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ header,  .footer-container {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #000000;
-    background-color: #f8f9fa;
+    background: #f8f9fa;
     font-weight: bold;
 }
 
@@ -77,7 +77,9 @@ header,  .footer-container {
     margin-right: 20px;
     padding-right: 10px;
    
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
 
@@ -90,7 +92,7 @@ header,  .footer-container {
     font-size: 1em;
     color: #555;
     margin: 0;
-    border-left: 3px solid #CC553D; 
+    border-left: 3px solid linear-gradient(250deg, #CC553D 19%, #8B1805 100%); 
    padding-left: 25px;
 }
 
@@ -104,7 +106,9 @@ header,  .footer-container {
 }
 
 .card-title {
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
 
@@ -113,7 +117,7 @@ header,  .footer-container {
 }
 
 .red-div {
-    background-color: #CC553D; /* #CC553D background color */
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%); /* linear-gradient(250deg, #CC553D 19%, #8B1805 100%) background color */
     color: rgb(0, 0, 0); /* Text color */
     padding: 20px;
    margin-top: 20PX;
@@ -124,7 +128,7 @@ header,  .footer-container {
 }
 
 .btn-black {
-    background-color: black; /* Black button background */
+    background: black; /* Black button background */
     color: white; /* White button text color */
 }
 
@@ -134,7 +138,7 @@ header,  .footer-container {
 
 
 .it-services {
-    background-color: #000;
+    background: #000;
     padding: 40px 20px;
     color: #fff;
 }
@@ -154,7 +158,9 @@ header,  .footer-container {
 
 .it-services-content h2 {
     font-size: 36px;
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
 }
 
@@ -166,7 +172,7 @@ header,  .footer-container {
 
 .learn-more-button {
     display: inline-block;
-    background-color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -175,11 +181,11 @@ header,  .footer-container {
 }
 
 .learn-more-button:hover {
-    background-color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
 }
 
 .consultation-section {
-    background-color: #CC553D ;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
     color: #000;
     padding: 40px 20px;
     margin-bottom: 20px;
@@ -218,7 +224,7 @@ header,  .footer-container {
 
 .consultation-button {
     display: inline-block;
-    background-color: #000;
+    background: #000;
     color: #fff;
     padding: 15px 30px;
     text-decoration: none;
@@ -229,7 +235,9 @@ header,  .footer-container {
 
 .consultation-button:hover {
    transition: 0.5s;
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -244,7 +252,9 @@ header,  .footer-container {
 }
 
 .core-values-text h1 {
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 36px;
 }
 
@@ -266,7 +276,7 @@ header,  .footer-container {
 .about-section {
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     border-radius: 10px;
 }
 
@@ -275,7 +285,9 @@ header,  .footer-container {
 }
 
 .about-text h2 {
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 24px;
 }
 
@@ -293,14 +305,14 @@ header,  .footer-container {
 .learn-more-button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
     color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
 .learn-more-button:hover {
-    background-color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
     
 }
 
@@ -311,7 +323,9 @@ header,  .footer-container {
 }
 
 .clients-section h2 {
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -393,14 +407,16 @@ button {
     height: auto;
 }
 .btn-custom {
-    background-color: #CC553D;
-    transition: background-color 0.3s ease;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    transition: background 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: black;
+    background: black;
     color: white; /* Optional: Change text color on hover */
 }
 .red-text {
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

@@ -1,5 +1,5 @@
 .footer-container {
-    background-color: #000000;
+    background: #000000;
     color: #ffffff;
     padding: 0px 20px;
 }
@@ -11,7 +11,9 @@
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-section p, .footer-section ul, .footer-section a {
@@ -20,7 +22,9 @@
 }
 
 .footer-section a:hover {
-    color: #CC553D;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
 
@@ -30,7 +34,7 @@
 }
 
 .footer-bottom {
-    background-color: #000000;
+    background: #000000;
     color: #fff;
 }
 
