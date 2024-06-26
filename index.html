@@ -99,7 +99,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <nav class="nav flex-column">
+    <nav id="nav-menu" class="nav flex-column">
         <a class="navbutton1" href="index.html">Home</a>
         <a class="navbutton1" href="index.html">Service</a>
         <a class="navbutton1" href="contacts.html">Products</a>
@@ -108,12 +108,23 @@
         <a class="navbutton1" href="contacts.html">Contact Us</a>
         <a class="navbutton1" href="info.html">About Us</a>
     </nav>
+    
   </div>
 </div>
            
            
     </header>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#nav-menu a.navbutton1').click(function() {
+            // Remove active class from all links
+            $('#nav-menu a.navbutton1').removeClass('active');
+            // Add active class to the clicked link
+            $(this).addClass('active');
+        });
+    });
+</script>
     <!-- Bootstrap 5 JS and dependencies (Popper.js) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>

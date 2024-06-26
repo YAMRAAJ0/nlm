@@ -47,7 +47,9 @@ header {
     font-weight: 750;
     transition: padding 0.3s; /* Smooth transition for padding change */
 }
-
+.navbutton1.active {
+    color: red;
+}
 
 .navbutton {
     text-decoration: none;
@@ -58,6 +60,7 @@ header {
     font-weight: 750;
     transition: padding 0.3s; /* Smooth transition for padding change */
 }
+
 
 .logoimg {
     max-height: 50px;
