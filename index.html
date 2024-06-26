@@ -67,7 +67,6 @@
         </div>
     </div>
     
-
     <header class="sticky-top shadow-sm bg-white pb-1">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -80,9 +79,33 @@
                 <div class="col-lg-9 d-none d-lg-block">
                     <nav class="nav justify-content-end">
                         <a class="navbutton" href="index.html">Home</a>
-                        <a class="navbutton" href="index.html">Service</a>
-                        <a class="navbutton" href="contacts.html">Products</a>
-                        <a class="navbutton" href="info.html">Digital Automation</a>
+                        <div class="navbutton dropdown">
+                            <a class="drop dropdown-toggle" href="index.html" id="serviceDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
+                            <div class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <a class="dropdown-item" href="service1.html">SAP Implementation</a>
+                                <a class="dropdown-item" href="service2.html">SAP AMS</a>
+                                <a class="dropdown-item" href="service3.html">SAP Upgrade and Migration</a>
+                                <a class="dropdown-item" href="service2.html">SAP Roll Out</a>
+                                <a class="dropdown-item" href="service2.html">Expert Consultancy</a>
+                                <a class="dropdown-item" href="service2.html">Licensed Sale</a>
+                                <a class="dropdown-item" href="service2.html">ERP</a>
+                                <a class="dropdown-item" href="service2.html">SAP Trainings</a>
+                            </div>
+                        </div>
+                        <div class="navbutton dropdown">
+                            <a class="drop dropdown-toggle" href="index.html" id="productsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                            <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <a class="dropdown-item" href="product1.html">SAP</a>
+                                <a class="dropdown-item" href="product2.html">Non-SAP</a>
+                            </div>
+                        </div>
+                        <div class="navbutton dropdown">
+                            <a class="drop dropdown-toggle" href="index.html" id="automationDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Digital Automation</a>
+                            <div class="dropdown-menu" aria-labelledby="automationDropdown">
+                                <a class="dropdown-item" href="automation1.html">Invoice Automation</a>
+                                <a class="dropdown-item" href="automation2.html">Purchase Order Automation</a>
+                            </div>
+                        </div>                    
                         <a class="navbutton" href="contacts.html">Success Stories</a>
                         <a class="navbutton" href="contacts.html">Contact Us</a>
                         <a class="navbutton" href="info.html">About Us</a>
@@ -91,29 +114,46 @@
             </div>
         </div>
         <!-- Offcanvas Menu -->
-       
-
-<div class="offcanvas offcanvas-end d-lg-none" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <a href="index.html"><img class="logoimg" src="./image/NLM LOGO.png" alt="Icon"></a>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-<nav id="nav-menu" class="nav flex-column">
-    <a class="navbutton1" href="index.html">Home</a>
-    <a class="navbutton1" href="index.html">Service</a>
-    <a class="navbutton1" href="contacts.html">Products</a>
-    <a class="navbutton1" href="info.html">Digital Automation</a>
-    <a class="navbutton1" href="contacts.html">Success Stories</a>
-    <a class="navbutton1" href="contacts.html">Contact Us</a>
-    <a class="navbutton1" href="info.html">About Us</a>
-</nav>
-
-  </div>
-</div>
-           
-           
+        <div class="offcanvas offcanvas-end d-lg-none" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <a href="index.html"><img class="logoimg" src="./image/NLM LOGO.png" alt="Icon"></a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav id="nav-menu" class="nav flex-column">
+                    <a class="navbutton1" href="index.html">Home</a>
+                    <a class="navbutton1" data-bs-toggle="collapse" href="#serviceCollapse" role="button" aria-expanded="false" aria-controls="serviceCollapse">Service</a>
+                    <div class="collapse" id="serviceCollapse">
+                        <a class="navbutton1 dropdown-item" href="service1.html">SAP Implementation</a>
+                        <a class="navbutton1 dropdown-item" href="service2.html">SAP AMS</a>
+                        <a class="navbutton1 dropdown-item" href="service3.html">SAP Upgrade and Migration</a>
+                        <a class="navbutton1 dropdown-item" href="service2.html">SAP Roll Out</a>
+                        <a class="navbutton1 dropdown-item" href="service2.html">Expert Consultancy</a>
+                        <a class="navbutton1 dropdown-item" href="service2.html">Licensed Sale</a>
+                        <a class="navbutton1 dropdown-item" href="service2.html">ERP</a>
+                        <a class="navbutton1 dropdown-item" href="service2.html">SAP Trainings</a>
+                    </div>
+                    <a class="navbutton1" data-bs-toggle="collapse" href="#productsCollapse" role="button" aria-expanded="false" aria-controls="productsCollapse">Products</a>
+                    <div class="collapse" id="productsCollapse">
+                        <a class="navbutton1 dropdown-item" href="product1.html">SAP</a>
+                        <a class="navbutton1 dropdown-item" href="product2.html">Non-SAP</a>
+                    </div>
+                    <a class="navbutton1" data-bs-toggle="collapse" href="#automationCollapse" role="button" aria-expanded="false" aria-controls="automationCollapse">Digital Automation</a>
+                    <div class="collapse" id="automationCollapse">
+                        <a class="navbutton1 dropdown-item" href="automation1.html">Invoice Automation</a>
+                        <a class="navbutton1 dropdown-item" href="automation2.html">Purchase Order Automation</a>
+                    </div>
+                    <a class="navbutton1" href="contacts.html">Success Stories</a>
+                    <a class="navbutton1" href="contacts.html">Contact Us</a>
+                    <a class="navbutton1" href="info.html">About Us</a>
+                </nav>
+            </div>
+        </div>
     </header>
+    
+    
+    
+    
     
     <!-- Bootstrap 5 JS and dependencies (Popper.js) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -121,6 +161,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     
     <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+        const navbuttons = document.querySelectorAll('.navbutton');
+        navbuttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                const drop = button.querySelector('.drop');
+                if (drop) {
+                    drop.style.color = 'rgb(165, 0, 0)';
+                }
+            });
+            button.addEventListener('mouseout', () => {
+                const drop = button.querySelector('.drop');
+                if (drop) {
+                    drop.style.color = ''; // Reset to original color
+                }
+            });
+        });
+    });
+
                setTimeout(function() {
             const spinner = document.getElementById('spinner');
             if (spinner) {

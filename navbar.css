@@ -1,36 +1,68 @@
+/* Header styling */
+
+/* Remove default link styling */
+.nav a,
+.offcanvas-body a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Remove active effects */
+.nav a:active,
+.offcanvas-body a:active,
+.nav .dropdown-menu a:active,
+.offcanvas-body .dropdown-menu a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Remove focus effects */
+.nav a:focus,
+.offcanvas-body a:focus,
+.nav .dropdown-menu a:focus,
+.offcanvas-body .dropdown-menu a:focus {
+    color: inherit;
+    text-decoration: none;
+    outline: none; /* Remove outline */
+}
+
 header {
     width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0 20px;
     animation: slideDown 1s ease-out;
-} 
+}
+
+header .logoimg {
+    max-height: 40px;
+    padding-left: 10px;
+    transition: transform 0.3s;
+}
+
+header .logoimg:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar styling */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);/* Dark blue color */
-    padding: 0px 20px;
+    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    padding: 0 20px;
     color: #ffffff;
     margin-top: 4px;
 }
-.navbar-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 10px;
-}
 
-.navbar-user a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
+.navbar-links a,
+.navbar-user a,
 .navbar-user span {
     color: #ffffff;
-    padding: 0 5px;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 .navbar-user {
@@ -38,60 +70,31 @@ header {
     align-items: center;
 }
 
+/* Navbutton styling */
+.navbutton{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 23px 25px;
+    position: relative;
+    font-weight: 750;
+    transition: padding 0.3s;
+}
 .navbutton1 {
     text-decoration: none;
     color: #000000;
     font-size: 1.2em;
-    padding: 10px 25px; /* Default padding for larger screens */
+    padding: 2px 25px;
     position: relative;
     font-weight: 750;
-    transition: padding 0.3s; /* Smooth transition for padding change */
-}
-.navbutton1.active {
-    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;;
-}
-
-.navbutton {
+    transition: padding 0.3s;
     text-decoration: none;
-    color: #000000;
-    font-size: 1.2em;
-    padding: 23px 25px; /* Default padding for larger screens */
-    position: relative;
-    font-weight: 750;
-    transition: padding 0.3s; /* Smooth transition for padding change */
 }
 
-
-
-/* For screens smaller than 992px (medium devices and smaller) */
-@media (max-width: 1244px) {
-    .navbutton {
-        padding: 25px 10px; /* Adjust padding for medium screens */
-    }
+.navbutton1.active {
+  color: rgb(133, 0, 0);
+  text-decoration: none;
 }
-
-/* For screens smaller than 768px (small devices and smaller) */
-@media (max-width: 1113px) {
-    .navbutton {
-        font-size: 1em;
-        padding: 25px 15px; /* Adjust padding for small screens */
-    }
-    header .logoimg {
-       
-        padding-left: 5px;
-       
-    }
-}
-
-/* For screens smaller than 576px (extra small devices) */
-@media (max-width: 575.98px) {
-    .navbutton {
-        padding: 20px 10px; /* Adjust padding for extra small screens */
-    }
-}
-
 
 .navbutton::after {
     content: '';
@@ -112,37 +115,72 @@ header {
     transform-origin: bottom left;
 }
 
-.navbutton:hover {
-    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none; /* Ensure underline is removed on hover */
+.navbutton:hover,
+.drop:hover {
+    color: rgb(165, 0, 0);
+    text-decoration: none;
 }
 
-
-header .logoimg {
-    max-height: 40px;
-    padding-left: 10px;
-
-    transition: transform 0.3s;
-}
-
-header .logoimg:hover {
-    transform: scale(1.1);
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
+/* Media queries */
+@media (max-width: 1295px) {
+    .navbutton {
+        padding: 30px 10px;
     }
 }
 
+@media (max-width: 1113px) {
+    .navbutton {
+        font-size: 1em;
+        padding: 25px 15px;
+    }
+    header .logoimg {
+        padding-left: 5px;
+    }
+}
 
+@media (max-width: 575.98px) {
+    .navbutton {
+        padding: 20px 10px;
+    }
+}
+
+/* Dropdown menu styling */
+.navbutton.dropdown:hover .dropdown-menu {
+    display: block;
+    transition: 1s;
+    transform: 1s;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: 1s;
+    transform: 1s;
+}
+
+.dropdown-item {
+    padding: 2px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    padding: 1px 10px;
+    transition: 1s;
+    transform: 1s;
+}
+
+.dropdown-item:hover {
+    color: #960000;
+}
+
+/* Offcanvas menu styling */
 .offcanvas-body .nav-button {
     text-decoration: none;
     color: #000;
@@ -153,8 +191,27 @@ header .logoimg:hover {
 }
 
 .offcanvas-body .nav-button:hover {
-    background: #f8f9fa; /* Light gray background on hover */
+    background: #f8f9fa;
     background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Bootstrap primary color on hover */
+    -webkit-text-fill-color: transparent;
+}
+.offcanvas-body .navbutton1.dropdown-item {
+    padding-left: 20px;
+}
+.drop {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Keyframes for animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
