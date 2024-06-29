@@ -185,12 +185,15 @@ header,  .footer-container {
 }
 
 .consultation-section {
-    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
+    background-image: url('./image/White-Abstract-Pictures.png'); /* Ensure image9-2.png is in the same directory */
     color: #000;
     padding: 40px 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+    background-size: cover; 
+    background-position: center; 
 }
+
 
 .consultation-container {
     display: flex;
@@ -213,9 +216,10 @@ header,  .footer-container {
 }
 
 .consultation-text p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     margin: 0;
+    font-weight: 500;
 }
 
 .consultation-button-container {
@@ -234,11 +238,11 @@ header,  .footer-container {
 }
 
 .consultation-button:hover {
-   transition: 0.5s;
-    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+   transition: 0.5s; 
+ 
+    text-decoration: none;
+   
+   
 }
 
 
@@ -425,3 +429,6 @@ button {
 
 
 
+.logo1{
+    height: 50px;
+}

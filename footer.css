@@ -15,6 +15,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.footer-section p{
+    padding: 0 10px;
+}
 
 .footer-section p, .footer-section ul, .footer-section a {
     font-size: 14px;
@@ -59,3 +62,4 @@
     opacity: 1;
     transform: translateX(0);
 }
+
