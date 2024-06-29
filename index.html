@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="navbar.css">
     
         <!-- Bootstrap Bundle JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
         <!-- Custom JavaScript -->
         <script defer src="animation.js"></script>
@@ -79,7 +78,10 @@
                 <div class="col-lg-9 d-none d-lg-block">
                     <nav class="nav justify-content-end">
                         <a class="navbutton" href="index.html">Home</a>
-                        <div class="navbutton dropdown">
+                        <a class="navbutton" href="index.html">Service</a>
+                        <a class="navbutton" href="index.html">Products</a>
+                        <a class="navbutton" href="index.html">Digital Automation</a>
+                        <!-- <div class="navbutton dropdown">
                             <a class="drop dropdown-toggle" href="index.html" id="serviceDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
                             <div class="dropdown-menu" aria-labelledby="serviceDropdown">
                                 <a class="dropdown-item" href="service1.html">SAP Implementation</a>
@@ -105,7 +107,7 @@
                                 <a class="dropdown-item" href="automation1.html">Invoice Automation</a>
                                 <a class="dropdown-item" href="automation2.html">Purchase Order Automation</a>
                             </div>
-                        </div>                    
+                        </div>                     -->
                         <a class="navbutton" href="contacts.html">Success Stories</a>
                         <a class="navbutton" href="contacts.html">Contact Us</a>
                         <a class="navbutton" href="info.html">About Us</a>
@@ -123,7 +125,7 @@
                 <nav id="nav-menu" class="nav flex-column">
                     <a class="navbutton1" href="index.html">Home</a>
                     <a class="navbutton1" data-bs-toggle="collapse" href="#serviceCollapse" role="button" aria-expanded="false" aria-controls="serviceCollapse">Service</a>
-                    <div class="collapse" id="serviceCollapse">
+                    <!-- <div class="collapse" id="serviceCollapse">
                         <a class="navbutton1 dropdown-item" href="service1.html">SAP Implementation</a>
                         <a class="navbutton1 dropdown-item" href="service2.html">SAP AMS</a>
                         <a class="navbutton1 dropdown-item" href="service3.html">SAP Upgrade and Migration</a>
@@ -132,78 +134,26 @@
                         <a class="navbutton1 dropdown-item" href="service2.html">Licensed Sale</a>
                         <a class="navbutton1 dropdown-item" href="service2.html">ERP</a>
                         <a class="navbutton1 dropdown-item" href="service2.html">SAP Trainings</a>
-                    </div>
+                    </div> -->
                     <a class="navbutton1" data-bs-toggle="collapse" href="#productsCollapse" role="button" aria-expanded="false" aria-controls="productsCollapse">Products</a>
-                    <div class="collapse" id="productsCollapse">
-                        <a class="navbutton1 dropdown-item" href="product1.html">SAP</a>
+                    <!-- <div class="collapse" id="productsCollapse">
+                        <a class="navbutton1 dropdown-item ml-10" href="product1.html">SAP</a>
                         <a class="navbutton1 dropdown-item" href="product2.html">Non-SAP</a>
-                    </div>
+                    </div> -->
                     <a class="navbutton1" data-bs-toggle="collapse" href="#automationCollapse" role="button" aria-expanded="false" aria-controls="automationCollapse">Digital Automation</a>
-                    <div class="collapse" id="automationCollapse">
+                    <!-- <div class="collapse" id="automationCollapse">
                         <a class="navbutton1 dropdown-item" href="automation1.html">Invoice Automation</a>
                         <a class="navbutton1 dropdown-item" href="automation2.html">Purchase Order Automation</a>
-                    </div>
+                    </div> -->
                     <a class="navbutton1" href="contacts.html">Success Stories</a>
                     <a class="navbutton1" href="contacts.html">Contact Us</a>
                     <a class="navbutton1" href="info.html">About Us</a>
                 </nav>
             </div>
         </div>
+       
     </header>
     
-    
-    
-    
-    
-    <!-- Bootstrap 5 JS and dependencies (Popper.js) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    
-    <script>
-
-document.addEventListener('DOMContentLoaded', () => {
-        const navbuttons = document.querySelectorAll('.navbutton');
-        navbuttons.forEach(button => {
-            button.addEventListener('mouseover', () => {
-                const drop = button.querySelector('.drop');
-                if (drop) {
-                    drop.style.color = 'rgb(165, 0, 0)';
-                }
-            });
-            button.addEventListener('mouseout', () => {
-                const drop = button.querySelector('.drop');
-                if (drop) {
-                    drop.style.color = ''; // Reset to original color
-                }
-            });
-        });
-    });
-
-               setTimeout(function() {
-            const spinner = document.getElementById('spinner');
-            if (spinner) {
-                spinner.style.display = 'none';
-                document.body.style.overflow = 'auto'; // Re-enable scrolling
-            }
-        }, 6000); // 4000 milliseconds = 4 seconds
-
-        window.addEventListener('scroll', function() {
-            const navButtons = document.querySelectorAll('.navbutton');
-            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-            const scrollThreshold = document.documentElement.scrollHeight * 0.1;
-    
-            navButtons.forEach(button => {
-                if (scrollPosition > scrollThreshold) {
-                    button.style.padding = '15px 10px'; // New padding when scroll > 10%
-                } else {
-                    button.style.padding = '23px 25px'; // Default padding
-                }
-            });
-        });
-    </script>
-
- 
     <!-- carousel -->
     <div class="carousel">
         <!-- list item -->
@@ -326,12 +276,15 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>  
 
 
+
+    
+
 <div class="container">
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
                 <div class="sap-modules">
-                    <section class="hidden left-slide"><h2 class="animate__animated animate__fadeInLeft"><span class="sap-text">SAP</span> Implementation: </h2>
+                    <section class=""><h2 class="animate__animated animate__fadeInLeft"><span class="sap-text">SAP</span> Implementation: </h2>
                    <p class="animate__animated animate__fadeInRight">Our comprehensive Implementation Services portfolio is tailored to assist organizations in their business transformation endeavors. These services are meticulously designed to facilitate alignment with strategic business objectives, enhance productivity, reduce Total Cost of Ownership (TCO), and optimize ROI. We place a strong emphasis on harnessing our services through SAP technology to deliver maximum benefits to organizations, encompassing intellectual capital, regulatory compliance, and fortified client relationships. By integrating industry best practices, proven implementation methodologies, and advanced configuration tools, we expedite the deployment of SAP ERP solutions, ensuring a seamless transition to the SAP HANA database for enhanced real-time reporting capabilities. Additionally, we specialize in the deployment of contemporary Fiori web and mobile-based applications for SAP systems</p>
                 </section>
                 </div>
@@ -343,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="row">
             <div class="col-md-6 mb-4">
                 <div class="card card-hover animate__animated animate__fadeInLeft">
-                    <section class="hidden left-slide"><div class="card-body">
+                    <section class=""><div class="card-body">
                         <img src="./image/Cloud.png" class="float-left mr-3" alt="Icon">
                         <h5 class="card-title">Cloud Integration Gateway (CIG)</h5>
                         <p class="card-text">Cloud Integration Gateway (CIG) services provide advanced digital solutions for integrating your e-commerce platforms with SAP systems. CIG simplifies the exchange of information between your e-commerce applications and SAP, ensuring accurate and timely data synchronization. This improves your business's ability to efficiently manage orders, inventory, and customer interactions. Our CIG services are tailored to enhance your e-commerce capabilities, drive sales growth, and improve customer satisfaction.</p>
@@ -352,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card card-hover animate__animated animate__fadeInRight">
-                    <section class="hidden right-slide"> <div class="card-body">
+                    <section class=""> <div class="card-body">
                         <img src="./image/Code.png" class="float-left mr-3" alt="Icon">
                         <h5 class="card-title">Advanced Business Application Programming (ABAP)</h5>
                         <p class="card-text">ABAP services provide advanced digital solutions for custom development and enhancement of SAP applications. ABAP (Advanced Business Application Programming) is a powerful programming language used to develop applications for the SAP ecosystem. Skilled ABAP developers create tailored solutions that meet unique business requirements, optimize performance, and ensure seamless integration with SAP systems. Whether custom reports, interfaces, or extensions are needed, ABAP services deliver reliable and high-performance solutions.</p>
@@ -361,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card card-hover animate__animated animate__fadeInLeft">
-                    <section class="hidden left-slide"> <div class="card-body">
+                    <section class=""> <div class="card-body">
                         <img src="./image/Business.png" class="float-left mr-3" alt="Icon">
                         <h5 class="card-title">Extensibility Suite (CAP, RAP, CDS)</h5>
                         <p class="card-text">The Extensibility Suite at NLM IT Solutions offers a range of digital solutions for extending and enhancing SAP applications. With the Cloud Application Programming (CAP) model, we develop scalable and cloud-native applications. The Restful ABAP Programming (RAP) model allows for the creation of modern, service-oriented applications. Core Data Services (CDS) provide a powerful framework for defining and consuming data models within SAP. Our Extensibility Suite services empower your business with flexibility, innovation, and seamless integration.</p>
@@ -370,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card card-hover animate__animated animate__fadeInRight">
-                    <section class="hidden right-slide"> <div class="card-body">
+                    <section class=""> <div class="card-body">
                         <img src="./image/Laptop Settings.png" class="float-left mr-3" alt="Icon">
                         <h5 class="card-title">Business Technology Platform (BTP)</h5>
                         <p class="card-text">The Business Technology Platform (BTP) services provide comprehensive digital solutions for leveraging SAP's cloud platform capabilities. BTP offers a unified environment for developing, managing, and deploying applications, data, and integrations. These services enable businesses to harness the full potential of cloud computing, data management, and advanced analytics, driving digital transformation, enhancing operational efficiency, and unlocking new business opportunities.</p>
@@ -388,11 +341,11 @@ document.addEventListener('DOMContentLoaded', () => {
        
             <div class="row align-items-center">
                 <div class="col-md-6 it-services-image animate__animated animate__fadeInLeft">
-                    <section class="hidden left-slide"><img src="./image/Frame 12.png" alt="IT Services Image" class="img-fluid rounded">
+                    <section class=""><img src="./image/Frame 12.png" alt="IT Services Image" class="img-fluid rounded">
                         </section>
                     </div>
                 <div class="col-md-6 it-services-content animate__animated animate__fadeInRight">
-                    <section class="hidden right-slide"><h2>SAP Ariba</h2>
+                    <section class=""><h2>SAP Ariba</h2>
                     <p>SAP Ariba offers advanced digital solutions for procurement and supply chain management. It provides a comprehensive suite of tools for sourcing, procurement, and supplier management. Our experts can help streamline procurement processes, improve supplier collaboration, and achieve cost savings. This enables businesses to optimize supply chain operations, enhance visibility, and drive efficiency.</p>
                     <a href="#" class="btn btn-success learn-more-button animate__animated animate__fadeInUp">Learn More</a></section>
                 </div>
@@ -406,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="col-md-12">
                 <div class="sap-modules animate__animated animate__fadeInUp">
                     <!-- Left-slide Content -->
-                    <section class="hidden left-slide">
+                    <section class="">
                         <h2><span class="sap-text">Our</span> Services</h2>
                   
                         <p>At SCM Champs, a SAP supply chain consulting company/Firm, we pride ourselves on providing an extensive array of SAP Digital Supply Chain Management services. Our offerings encompass everything from Development, Integration, Migration, Maintenance, to Support Services for SAP Digital Logistics, SAP Digital Supply Chain, and Staffing. By availing our services, businesses can elevate their supply chain operations and bolster their overall operational efficiency. Our team of seasoned experts boasts a track record of success in assisting companies in enhancing their supply chain operations. Connect with us today to discover how we can assist you in attaining your business objectives.</p>
@@ -421,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
-                    <section class="hidden left-slide"><div class="card-body">
+                    <section class=""><div class="card-body">
                         <img src="./image/iCON5 1.png" class="mb-3" alt="Icon">
                     </div>
                     <h5 class="card-title">Integration</h5></section>
@@ -429,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
-                    <section class="hidden left-slide"><div class="card-body">
+                    <section class=""><div class="card-body">
                         <img src="./image/iCON9 1.png" class="mb-3" alt="Icon">
                     </div>
                     <h5 class="card-title">BTP</h5></section>
@@ -437,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
-                    <section class="hidden right-slide"><div class="card-body">
+                    <section class=""><div class="card-body">
                         <img src="./image/iCON8 1.png" class="mb-3" alt="Icon">
                     </div>
                     <h5 class="card-title">S4 HANA</h5></section>
@@ -445,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
-                    <section class="hidden right-slide"><div class="card-body">
+                    <section class=""><div class="card-body">
                         <img src="./image/iCON1 1.png" class="mb-3" alt="Icon">
                     </div>
                     <h5 class="card-title">ABAP</h5></section>
@@ -458,10 +411,10 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="container my-4">
         <div class="row about-section align-items-center">
             <div class="col-md-6 about-image">
-                <section class="hidden left-slide"><img src="./image/Architect working on blueprint2.png" alt="NLM IT Solutions Image" class="img-fluid rounded animate__animated animate__fadeInLeft"></section>
+                <section class=""><img src="./image/Architect working on blueprint2.png" alt="NLM IT Solutions Image" class="img-fluid rounded animate__animated animate__fadeInLeft"></section>
             </div>
             <div class="col-md-6 about-text">
-                <section class="hidden right-slide">
+                <section class="">
                 <h2 class="animate__animated animate__fadeInDown">ABOUT NLM IT SOLUTIONS PVT. LTD.</h2>
                 <h3 class="animate__animated animate__fadeInDown">We Are Increasing Business Success With SAP Technology</h3>
                 <p class="animate__animated animate__fadeInLeft">NLM IT Solutions Private Limited is a leading consulting and outsourcing company that specializes in procurement outsourcing and project implementation services.</p>
@@ -477,7 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="row align-items-center bg-light p-4 rounded">
             <!-- Left Column -->
             <div class="col-md-6 text-center">
-                <section class="hidden left-slide">
+                <section class="">
                     <h2 class=" animate__animated animate__fadeInDown red-text">PRODUCTS</h2>
                     <p class="lead animate__animated animate__fadeInDown ">Explore our range of products.</p>
                     
@@ -515,7 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             <!-- Right Column -->
             <div class="col-md-6 text-center animate__animated animate__fadeInRight">
-                <section class="hidden right-slide">
+                <section class="">
                     <img src="./image/Teamwork.png" alt="Team" class="img-fluid rounded">
                    
                 </section>
@@ -538,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="row align-items-center">
         <!-- Part 1: List with Images -->
         <div class="col-md-2">
-            <section class="hidden left-slide">
+            <section class="">
                 <ul class="list-unstyled">
                     <li class="d-flex align-items-center mb-2 animate__animated animate__fadeInLeft">
                         <img src="./image/Person.png" alt="Vision" class="icon mr-2"> <strong>Vision</strong>
@@ -555,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <!-- Part 2: Text Content -->
         <div class="col-md-4">
-            <section class="hidden left-slide">
+            <section class="">
                 <p class="lead animate__animated animate__fadeInLeft">
                     <strong>Champs Inc.</strong> Our dedication to creating specialized solutions that assist our clients in achieving their particular business goals is something we take great pride in, as is our commitment to innovation and sustainability.
                 </p>
@@ -567,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <!-- Part 3: Image -->
         <div class="col-md-6 text-center">
-            <section class="hidden right-slide">
+            <section class="">
                 <img src="./image/Frame 18.png" alt="Technology" class="img-fluid animate__animated animate__fadeInRight">
             </section>
         </div>
@@ -604,13 +557,13 @@ document.addEventListener('DOMContentLoaded', () => {
 <section class="consultation-section">
     <div class="consultation-container">
         <div class="consultation-text">
-            <section class="hidden left-slide">
+            <section class="">
                 <h2>Get Free Consultation</h2>
                 <p>As your trusted SAP consulting company based in the United States, SCM Champs provides a comprehensive suite of services within the realm of SAP Digital Logistics and SAP Digital Supply Chain. Our services encompass Implementation, Development, Integration, Migration, Maintenance, Support, and Staffing solutions. Count on us to provide reliable and effective services tailored to align seamlessly with your business requirements.</p>
             </section>
         </div>
         <div class="consultation-button-container">
-            <section class="hidden right-slide">
+            <section class="">
                 <a href="#" class="consultation-button">CONTACT NOW</a>
             </section>
         </div>
@@ -623,13 +576,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="row">
             
             <div class="col-md-3 footer-section">
-                <section class="hidden left-slide">
+                <section class="">
                     <img src="./image/Frame 25.png" alt="NLM Logo" class="logo img-fluid mb-3">
                     <p>NLM IT Solutions Private Limited is a leading consulting and outsourcing company that specializes in procurement outsourcing and project implementation services.</p>
                 </section>
             </div>
             <div class="col-md-3 footer-section">
-                <section class="hidden left-slide">
+                <section class="">
                     <h3>Information</h3>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -640,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </section>
             </div>
             <div class="col-md-3 footer-section">
-                <section class="hidden right-slide">
+                <section class="">
                     <h3>Contact Us</h3>
                     <p>6th Floor, Dream Heights, Cyb, 5 Riico Cyber Park, Heavy Industrial Area, Jodhpur, Rajasthan, 342003</p>
                     <p>+91 84451-79615</p>
@@ -648,7 +601,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </section>
             </div>
             <div class="col-md-3 footer-section">
-                <section class="hidden right-slide">
+                <section class="">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/nlmitsolutions"><img src="./image/Facebook.png" alt="Facebook" class="img-fluid mr-2"></a>
@@ -665,13 +618,19 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
    
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<!-- Include jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Include Popper.js -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Your custom scripts -->
 <script src="js/bootstrap.min.js"></script>    
 <script src="app.js"></script>
+
+
 </body>
 </html>

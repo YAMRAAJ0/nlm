@@ -47,3 +47,46 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navbuttons = document.querySelectorAll('.navbutton');
+    navbuttons.forEach(button => {
+        button.addEventListener('mouseover', () => {
+            const drop = button.querySelector('.drop');
+            if (drop) {
+                drop.style.color = 'rgb(165, 0, 0)';
+            }
+        });
+        button.addEventListener('mouseout', () => {
+            const drop = button.querySelector('.drop');
+            if (drop) {
+                drop.style.color = ''; // Reset to original color
+            }
+        });
+    });
+});
+
+           setTimeout(function() {
+        const spinner = document.getElementById('spinner');
+        if (spinner) {
+            spinner.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+    }, 6000); // 4000 milliseconds = 4 seconds
+
+    window.addEventListener('scroll', function() {
+        const navButtons = document.querySelectorAll('.navbutton');
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        const scrollThreshold = document.documentElement.scrollHeight * 0.1;
+
+        navButtons.forEach(button => {
+            if (scrollPosition > scrollThreshold) {
+                button.style.padding = '15px 10px'; // New padding when scroll > 10%
+            } else {
+                button.style.padding = '23px 25px'; // Default padding
+            }
+        });
+    });

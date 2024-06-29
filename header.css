@@ -13,7 +13,7 @@ a{
 /* carousel */
 .carousel{
     color: #eee;
-    height: 88vh;
+    height: 86vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -89,8 +89,8 @@ a{
     gap: 20px;
 }
 .thumbnail .item{
-    width: 150px;
-    height: 220px;
+    width: 100px;
+    height: 100px;
     flex-shrink: 0;
     position: relative;
 }
