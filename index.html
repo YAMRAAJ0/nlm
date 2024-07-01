@@ -19,6 +19,49 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="loading.css">
        <link rel="stylesheet" href="navbar.css">
+       <style>
+        .bg-custom {
+          background: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg') center center no-repeat;
+          background-size: cover;
+          background-blend-mode: multiply;
+          background-color: rgba(55, 65, 81, 0.7); /* bg-gray-700 with 70% opacity */
+        }
+      </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loading.css">
+   <link rel="stylesheet" href="navbar.css">
+    <script defer src="navbar.js"></script>
+
+    <style>
+        .gallery-item {
+          position: relative;
+        }
+    
+        .gallery-item img {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        .gallery-content {
+          position: relative;
+          z-index: 10;
+          width: 100%;
+          border: 4px solid #e5e7eb;
+          background-color: white;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+    
+        .gallery-item:hover .gallery-content {
+          opacity: 1;
+        }
+      </style>
         <script defer src="navbar.js"></script>
     </head>    
 <body>
@@ -102,7 +145,7 @@
                                 <a class="dropdown-item" href="automation2.html">Purchase Order Automation</a>
                             </div>
                         </div>                     -->
-                        <a class="navbutton" href="Success Stories.html">Success Stories</a>
+                        <!-- <a class="navbutton" href="Success Stories.html">Success Stories</a> -->
                         <a class="navbutton" href="contacts.html">Contact Us</a>
                         <a class="navbutton" href="info.html">About Us</a>
                     </nav>
@@ -273,7 +316,59 @@
     </div>  
 
 
-
+    <div class="bg-white text-dark py-5">
+        <div class="container py-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="d-flex flex-column justify-content-center h-100">
+                <div class="bg-success text-white text-uppercase rounded-pill py-1 px-3 mb-3 d-inline-flex align-items-center">
+                  <svg class="bi bi-star-fill me-2" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.32-.158-.888.283-.95l4.898-.696L7.538.792c.197-.396.73-.396.927 0l2.184 4.327 4.898.696c.441.063.612.63.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                  <span class="small">NLM</span>
+                </div>
+                <h1 class="display-5 fw-bold">Welcome to NLM IT Solutions</h1>
+             
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="https://images.unsplash.com/photo-1626314928277-1d373ddb6428?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzd8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="img-fluid rounded-lg" alt="Image">
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1626318305863-bb23d0297c0b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Financial Accounting and Controlling (FICO)</h5>
+                  <p class="card-text">Our Financial Accounting and Controlling (FICO) services offer robust digital solutions for managing your financial operations. SAP FICO provides a comprehensive framework for financial accounting, controlling, and reporting. Our FICO experts ensure accurate financial data management, streamlined processes, and compliance with regulatory requirements. We help you achieve financial transparency, optimize resource allocation, and make informed business decisions.</p>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Process Integration/Process Orchestration (PI/PO)</h5>
+                  <p class="card-text">Our Process Integration/Process Orchestration (PI/PO) services offer strong digital solutions for integrating and managing your business processes. Through the use of SAP PI/PO, we facilitate smooth communication and coordination among different applications and systems within your organization. This guarantees that your business processes are well-coordinated, efficient, and able to adapt to changing market demands. At NLM IT Solutions, a team of experts is dedicated to optimizing the integration landscape, enhancing operational efficiency, and driving business success.</p>
+                
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <img src="https://images.unsplash.com/photo-1626197031507-c17099753214?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">SuccessFactors</h5>
+                  <p class="card-text">SuccessFactors offers advanced digital solutions for human capital management. SAP SuccessFactors provides a comprehensive suite of tools for talent management, employee engagement, and workforce planning. We help organizations attract, develop, and retain top talent, enhance employee productivity, and align HR strategies with business goals to build a high-performing workforce and achieve organizational success.</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
     <div class="container mt-5">
@@ -340,6 +435,78 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sap-modules animate__animated animate__fadeInUp">
+                    <!-- Left-slide Content -->
+                    <section class="">
+                        <h2><span class="sap-text">Our</span> Services</h2>
+                  
+                        <p>At SCM Champs, a SAP supply chain consulting company/Firm, we pride ourselves on providing an extensive array of SAP Digital Supply Chain Management services. Our offerings encompass everything from Development, Integration, Migration, Maintenance, to Support Services for SAP Digital Logistics, SAP Digital Supply Chain, and Staffing. By availing our services, businesses can elevate their supply chain operations and bolster their overall operational efficiency. Our team of seasoned experts boasts a track record of success in assisting companies in enhancing their supply chain operations. Connect with us today to discover how we can assist you in attaining your business objectives.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <section class="bg-white text-dark">
+        <div class="container py-8">
+          <div class="row align-items-center">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-4 font-weight-bold mb-4">Our Services</h1>
+              <p class="lead text-muted mb-6">At SCM Champs, a SAP supply chain consulting company/Firm, we pride ourselves on providing an extensive array of SAP Digital Supply Chain Management services. Our offerings encompass everything from Development, Integration, Migration, Maintenance, to Support Services for SAP Digital Logistics, SAP Digital Supply Chain, and Staffing. By availing our services, businesses can elevate their supply chain operations and bolster their overall operational efficiency. Our team of seasoned experts boasts a track record of success in assisting companies in enhancing their supply chain operations. Connect with us today to discover how we can assist you in attaining your business objectives.</p>
+             
+            </div>
+            <div class="col-lg-5 d-none d-lg-flex">
+              <img src="https://lp-cms-production.imgix.net/2019-06/554369495_full.jpg" alt="mockup" class="img-fluid rounded-lg">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
+                    <section class=""><div class="card-body">
+                        <img src="./image/iCON5 1.png" class="mb-3" alt="Icon">
+                    </div>
+                    <h5 class="card-title">Integration</h5></section>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
+                    <section class=""><div class="card-body">
+                        <img src="./image/iCON9 1.png" class="mb-3" alt="Icon">
+                    </div>
+                    <h5 class="card-title">BTP</h5></section>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
+                    <section class=""><div class="card-body">
+                        <img src="./image/iCON8 1.png" class="mb-3" alt="Icon">
+                    </div>
+                    <h5 class="card-title">S4 HANA</h5></section>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card card-hover d-flex flex-column align-items-center animate__animated animate__fadeInUp">
+                    <section class=""><div class="card-body">
+                        <img src="./image/iCON1 1.png" class="mb-3" alt="Icon">
+                    </div>
+                    <h5 class="card-title">ABAP</h5></section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
     <!-- <div class="container my-4">
         <div class="row">
             <div class="col-md-6 mb-4">
@@ -455,6 +622,21 @@
         </div>
     </div>
     
+</div>
+<!-- component -->
+<section class="bg-custom text-white text-center py-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold mb-4">Transforming Businesses with Innovative Digital Solutions</h1>
+      <p class="lead mb-5 text-light">At NLM IT Solutions, we are dedicated to providing top-tier digital solutions that empower businesses to thrive in the modern digital landscape. With a deep expertise in both SAP and Non-SAP technologies, we help organizations optimize their operations, enhance efficiency, and achieve their strategic goals.</p>
+      <div class="d-flex justify-content-center gap-3">
+       
+       
+      </div>
+    </div>
+  </section>
+
+
+
 
     <div class="container my-4">
         <div class="row about-section align-items-center">
@@ -576,7 +758,7 @@
 </div>
 
 
-
+<!-- 
 <section>
     <div class="container clients-section my-4">
         <h2 class="animate__animated animate__fadeInDown">Our Prestigious Clients</h2>
@@ -601,7 +783,86 @@
             </div>
         </div>
     </div>
-</section></div>
+</section> -->
+</div>
+
+
+<section class="text-muted">
+    <div class="container py-5">
+      <div class="text-center w-100 mb-5">
+        <h1 class="display-5 font-weight-bold text-dark">Our Prestigious Clients</h1>
+        <p class="lead mx-auto">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="./image/cl-11 1.png" alt="gallery" class="img-fluid">
+            <div class="p-4 gallery-content">
+              <h2 class="text-sm text-primary mb-1">THE SUBTITLE</h2>
+              <h1 class="h5 font-weight-bold text-dark mb-3">Shooting Stars</h1>
+              <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="./image/cl-12 1.png" alt="gallery" class="img-fluid">
+            <div class="p-4 gallery-content">
+              <h2 class="text-sm text-primary mb-1">THE SUBTITLE</h2>
+              <h1 class="h5 font-weight-bold text-dark mb-3">The Catalyzer</h1>
+              <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="./image/cl-13 1.png" alt="gallery" class="img-fluid">
+            <div class="p-4 gallery-content">
+              <h2 class="text-sm text-primary mb-1">THE SUBTITLE</h2>
+              <h1 class="h5 font-weight-bold text-dark mb-3">The 400 Blows</h1>
+              <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="./image/cl-14 1.png" alt="gallery" class="img-fluid">
+            <div class="p-4 gallery-content">
+              <h2 class="text-sm text-primary mb-1">THE SUBTITLE</h2>
+              <h1 class="h5 font-weight-bold text-dark mb-3">Neptune</h1>
+              <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="./image/cl-15 1.png" alt="gallery" class="img-fluid">
+            <div class="p-4 gallery-content">
+              <h2 class="text-sm text-primary mb-1">THE SUBTITLE</h2>
+              <h1 class="h5 font-weight-bold text-dark mb-3">Holden Caulfield</h1>
+              <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="gallery-item">
+            <img src="./image/cl-16 1.png" alt="gallery" class="img-fluid">
+            <div class="p-4 gallery-content">
+              <h2 class="text-sm text-primary mb-1">THE SUBTITLE</h2>
+              <h1 class="h5 font-weight-bold text-dark mb-3">Alper Kamu</h1>
+              <p>Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
 <section class="consultation-section">
     <div class="consultation-container">
         <div class="consultation-text">
@@ -631,21 +892,19 @@
       <!-- Right -->
       <div>
         <a href="#" class="text-white me-3">
-          <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-facebook-f fa-2x"></i>
         </a>
         <a href="#" class="text-white me-3">
-          <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter fa-2x"></i>
         </a>
         <a href="#" class="text-white me-3">
-          <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram fa-2x"></i>
         </a>
         <a href="#" class="text-white me-3">
-          <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a href="#" class="text-white me-3">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
+    </div>
+    
       <!-- Right -->
     </section>
     <!-- Section: Social media -->
