@@ -77,20 +77,18 @@ header,  .footer-container {
     margin-right: 20px;
     padding-right: 10px;
    
-    background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   
     font-weight: bold;
 }
 
 .sap-modules .sap-text {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
 .sap-modules p {
     font-size: 1em;
-    color: #555;
+    color: #ffffff;
     margin: 0;
     border-left: 3px solid linear-gradient(250deg, #CC553D 19%, #8B1805 100%); 
    padding-left: 25px;
@@ -238,11 +236,12 @@ header,  .footer-container {
 }
 
 .consultation-button:hover {
-   transition: 0.5s; 
- 
+    transition: 0.2s; 
+    color: white;
     text-decoration: none;
    
-   
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -376,7 +375,11 @@ button {
 
 
 .sap-modules {
+    background-image: url('./image/image9-2.png');
     transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: white;
 }
 
 .card-hover {
@@ -429,6 +432,21 @@ button {
 
 
 
-.logo1{
-    height: 50px;
+
+
+
+
+
+
+.card-deck .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-deck .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.container .sap-modules h2 {
+    color: #8B1805;
 }

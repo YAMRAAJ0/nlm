@@ -1,138 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle Menu</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #222;
-            color: #f2c12e;
-            font-family: Arial, sans-serif;
-        }
-        .circle-menu-container {
-            position: relative;
-            width: 400px;
-            height: 400px;
-            margin: 50px auto;
-            border-radius: 50%;
-            border: 2px solid #f2c12e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .circle-menu {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: rotate 30s linear infinite;
-        }
-        .menu-item {
-            position: absolute;
-            width: 80px;
-            height: 40px;
-            background-color: white;
-            color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            transform-origin: center;
-        }
-        .menu-item:hover {
-            background-color: red;
-        }
-        .menu-item[data-position="1"] { transform: rotate(0deg) translate(160px) rotate(0deg); }
-        .menu-item[data-position="2"] { transform: rotate(30deg) translate(160px) rotate(-30deg); }
-        .menu-item[data-position="3"] { transform: rotate(60deg) translate(160px) rotate(-60deg); }
-        .menu-item[data-position="4"] { transform: rotate(90deg) translate(160px) rotate(-90deg); }
-        .menu-item[data-position="5"] { transform: rotate(120deg) translate(160px) rotate(-120deg); }
-        .menu-item[data-position="6"] { transform: rotate(150deg) translate(160px) rotate(-150deg); }
-        .menu-item[data-position="7"] { transform: rotate(180deg) translate(160px) rotate(-180deg); }
-        .menu-item[data-position="8"] { transform: rotate(210deg) translate(160px) rotate(-210deg); }
-        .menu-item[data-position="9"] { transform: rotate(240deg) translate(160px) rotate(-240deg); }
-        .menu-item[data-position="10"] { transform: rotate(270deg) translate(160px) rotate(-270deg); }
-        .menu-item[data-position="11"] { transform: rotate(300deg) translate(160px) rotate(-300deg); }
-        .menu-item[data-position="12"] { transform: rotate(330deg) translate(160px) rotate(-330deg); }
-        .center-item {
-            position: absolute;
-            width: 130px;
-            height: 65px;
-            background-color: gray;
-            color: white;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-        }
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        .text-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .text-container h1 {
-            color: #f2c12e;
-        }
-        .text-container p {
-            color: white;
-        }
-        .text-container a {
-            color: #f2c12e;
-            text-decoration: none;
-        }
-    </style>
-</head>
+    <head>
+       
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="loading.css">
+       <link rel="stylesheet" href="navbar.css">
+        <script defer src="navbar.js"></script>
+    </head>  
 <body>
-    <div class="text-container">
-        <h1>Explore insights and services for your C-suite role</h1>
-        <p>We know the imperatives of transformation and sustainable growth place varying demands on leaders across the C-suite, so we've curated our most actionable insights and relevant services for each leadership role.</p>
-        <p><a href="#">Click to discover more</a></p>
-    </div>
-    <div class="circle-menu-container">
-        <div class="circle-menu">
-            <div class="menu-item" data-position="1">CEO</div>
-            <div class="menu-item" data-position="2">CFO</div>
-            <div class="menu-item" data-position="3">COO</div>
-            <div class="menu-item" data-position="4">CHRO</div>
-            <div class="menu-item" data-position="5">CISO</div>
-            <div class="menu-item" data-position="6">CMO</div>
-            <div class="menu-item" data-position="7">CTO (Tech)</div>
-            <div class="menu-item" data-position="8">CRO (Risk)</div>
-            <div class="menu-item" data-position="9">CTO (Tax)</div>
-            <div class="menu-item" data-position="10">General Counsel</div>
-            <div class="menu-item" data-position="11">Board Exec</div>
-            <div class="center-item">General Counsel</div>
+    
+
+
+
+
+
+
+ <!-- Footer -->
+<footer class="text-center text-lg-start text-dark" style="background-color: #000000cc">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4 text-white" style="background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%);">
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+  
+      <!-- Right -->
+      <div>
+        <a href="#" class="text-white me-3">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white me-3">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white me-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white me-3">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-white me-3">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section style="color: white;">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img src="./image/Frame 25.png" alt="NLM Logo" class="logo1 img-fluid mb-3"><br>
+            <p>
+              NLM IT Solutions Private Limited is a leading consulting and outsourcing company that specializes in procurement outsourcing and project implementation services.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Products</h6>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;  height: 2px"
+            />
+            <p><a href="#!" class="text-white">SAP</a></p>
+            <p><a href="#!" class="text-white">NON-SAP</a></p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;  height: 2px"
+            />
+            <p><a href="#!" class="text-white">Home</a></p>
+            <p><a href="#!" class="text-white">SAP Services</a></p>
+            <p><a href="#!" class="text-white">About Us</a></p>
+            <p><a href="#!" class="text-white">Contact Us</a></p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+          
+            <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;  height: 2px"
+            />
+            <p><i class="fas fa-home mr-3"></i>6th Floor, Dream Heights, Cyb, 5 Riico Cyber Park, Heavy Industrial Area, Jodhpur, Rajasthan, 342003</p>
+            <p><i class="fas fa-envelope mr-3"></i>nlmitsolutionss@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i>+91 84451-79615</p>
+            <p><i class="fas fa-print mr-3"></i>+91 84451-79615</p>
+          </div>
+          <!-- Grid column -->
         </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="color: wheat; background: linear-gradient(250deg, #CC553D 19%, #8B1805 100%)">
+      © 2020 Copyright:
+      <a class="text-light" href="#">nlmitsolutions.com</a>
     </div>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-    <!-- JavaScript to handle auto-running effect -->
-    <script>
-        $(document).ready(function(){
-            $('.circle-menu').hover(
-                function() {
-                    $(this).css('animation-play-state', 'paused');
-                }, 
-                function() {
-                    $(this).css('animation-play-state', 'running');
-                }
-            );
-        });
-    </script>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+ 
+
+
+
+
+
+   
+</footer> 
+<!-- Include jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Include Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Your custom scripts -->
+<script src="js/bootstrap.min.js"></script>    
+<script src="app.js"></script>
 </body>
 </html>

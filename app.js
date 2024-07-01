@@ -1,59 +1,62 @@
-//step 1: get DOM
-let nextDom = document.getElementById('next');
-let prevDom = document.getElementById('prev');
-
-let carouselDom = document.querySelector('.carousel');
-let SliderDom = carouselDom.querySelector('.carousel .list');
-let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-let timeDom = document.querySelector('.carousel .time');
-
-thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 1000;
-let timeAutoNext = 3000;
-
-nextDom.onclick = function(){
-    showSlider('next');    
-}
-
-prevDom.onclick = function(){
-    showSlider('prev');    
-}
-let runTimeOut;
-let runNextAuto = setTimeout(() => {
-    next.click();
-}, timeAutoNext)
-function showSlider(type){
-    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
-    
-    if(type === 'next'){
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        carouselDom.classList.add('next');
-    }else{
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-        carouselDom.classList.add('prev');
-    }
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove('next');
-        carouselDom.classList.remove('prev');
-    }, timeRunning);
-
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        next.click();
-    }, timeAutoNext)
-}
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    const navbuttons = document.querySelectorAll('.navbutton');
-    navbuttons.forEach(button => {
+    // Step 1: Get DOM elements
+    const nextDom = document.getElementById('next');
+    const prevDom = document.getElementById('prev');
+    const carouselDom = document.querySelector('.carousel');
+    const SliderDom = carouselDom.querySelector('.carousel .list');
+    const thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+    let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+    const timeDom = document.querySelector('.carousel .time');
+    
+    const timeRunning = 1000;
+    const timeAutoNext = 3000;
+    let runTimeOut;
+    let runNextAuto;
+
+    // Initial setup
+    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+
+    nextDom.onclick = () => {
+        showSlider('next');
+    };
+
+    prevDom.onclick = () => {
+        showSlider('prev');
+    };
+
+    runNextAuto = setTimeout(() => {
+        nextDom.click();
+    }, timeAutoNext);
+
+    function showSlider(type) {
+        const SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+        thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+
+        if (type === 'next') {
+            SliderDom.appendChild(SliderItemsDom[0]);
+            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+            carouselDom.classList.add('next');
+        } else {
+            SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+            thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+            carouselDom.classList.add('prev');
+        }
+
+        clearTimeout(runTimeOut);
+        runTimeOut = setTimeout(() => {
+            carouselDom.classList.remove('next');
+            carouselDom.classList.remove('prev');
+        }, timeRunning);
+
+        clearTimeout(runNextAuto);
+        runNextAuto = setTimeout(() => {
+            nextDom.click();
+        }, timeAutoNext);
+    }
+
+    // Navigation button hover effect
+    const navButtons = document.querySelectorAll('.navbutton');
+    navButtons.forEach(button => {
         button.addEventListener('mouseover', () => {
             const drop = button.querySelector('.drop');
             if (drop) {
@@ -67,18 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
 
-           setTimeout(function() {
+    // Hide spinner after some time
+    setTimeout(() => {
         const spinner = document.getElementById('spinner');
         if (spinner) {
             spinner.style.display = 'none';
             document.body.style.overflow = 'auto'; // Re-enable scrolling
         }
-    }, 6000); // 4000 milliseconds = 4 seconds
+    });
 
-    window.addEventListener('scroll', function() {
-        const navButtons = document.querySelectorAll('.navbutton');
+    // Adjust navigation button padding based on scroll position
+    window.addEventListener('scroll', () => {
         const scrollPosition = window.scrollY || document.documentElement.scrollTop;
         const scrollThreshold = document.documentElement.scrollHeight * 0.1;
 
@@ -90,3 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
